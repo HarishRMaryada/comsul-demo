@@ -9,21 +9,21 @@ module.exports = function(app) {
       controller: consulController.service.list,
       type: "GET"
     },
-    // {
-    //   url: "/service/register",
-    //   controller: consulController.service.register,
-    //   type: "POST"
-    // },
-    // {
-    //   url: "/service/deregister",
-    //   controller: consulController.service.deregister,
-    //   type: "POST"
-    // },
-    // {
-    //   url: "/service/maintenance",
-    //   controller: consulController.service.maintenance,
-    //   type: "PUT"
-    // }
+    {
+      url: "/service/register",
+      controller: consulController.service.register,
+      type: "POST"
+    },
+    {
+      url: "/service/deregister",
+      controller: consulController.service.deregister,
+      type: "POST"
+    },
+    {
+      url: "/service/maintenance",
+      controller: consulController.service.maintenance,
+      type: "PUT"
+    }
   ];
 
   for (let route of routes) {

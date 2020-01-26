@@ -1,4 +1,4 @@
-const consul = require("./consulInstance").consul;
+const consul = require("./consulInstance");
 const errors = require("errors");
 
 
