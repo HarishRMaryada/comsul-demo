@@ -11,7 +11,7 @@ const port = 3000;
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
-// app.get("/health", (req, res) => res.send("Ok!"));
+app.get("/health", (req, res) => res.send("Ok!"));
 
 // app.get("/user/info", async (req, res) => {
 //   const user = await consul.getUserConfig();

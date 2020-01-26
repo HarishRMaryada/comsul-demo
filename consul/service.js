@@ -1,7 +1,6 @@
 const consul = require("./consulInstance");
 const errors = require("errors");
 
-
 module.exports = {
   list,
   register,

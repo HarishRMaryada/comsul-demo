@@ -23,7 +23,39 @@ module.exports = function(app) {
       url: "/service/maintenance",
       controller: consulController.service.maintenance,
       type: "PUT"
-    }
+    },
+    {
+        url: "/catalog/datacenters",
+        controller: consulController.catalog.datacenters,
+        type: "GET"
+      },
+      {
+        url: "/catalog/connectNodes",
+        controller: consulController.catalog.connectNodes,
+        type: "GET"
+      },
+      {
+        url: "/catalog/nodeList",
+        controller: consulController.catalog.nodeList,
+        type: "GET"
+      },
+      {
+        url: "/catalog/nodeServices",
+        controller: consulController.catalog.nodeServices,
+        type: "GET"
+      },
+
+      {
+        url: "/catalog/serviceList",
+        controller: consulController.catalog.serviceList,
+        type: "GET"
+      },
+      {
+        url: "/catalog/serviceNodes",
+        controller: consulController.catalog.serviceNodes,
+        type: "GET"
+      },
+
   ];
 
   for (let route of routes) {
