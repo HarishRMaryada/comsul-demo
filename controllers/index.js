@@ -54,8 +54,27 @@ module.exports = function(app) {
         url: "/catalog/serviceNodes",
         controller: consulController.catalog.serviceNodes,
         type: "GET"
+      }, 
+      {
+        url: "/health/node",
+        controller: consulController.health.node,
+        type: "GET"
       },
-
+      {
+        url: "/health/checks",
+        controller: consulController.health.checks,
+        type: "GET"
+      },
+      {
+        url: "/health/service",
+        controller: consulController.health.service,
+        type: "GET"
+      },
+      {
+        url: "/health/state",
+        controller: consulController.health.state,
+        type: "GET"
+      },      
   ];
 
   for (let route of routes) {
