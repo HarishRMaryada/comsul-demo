@@ -74,7 +74,17 @@ module.exports = function(app) {
         url: "/health/state",
         controller: consulController.health.state,
         type: "GET"
-      },      
+      },    
+      {
+        url: "/kv/get",
+        controller: consulController.kv.get,
+        type: "GET"
+      },   
+      {
+        url: "/kv/keys",
+        controller: consulController.kv.keys,
+        type: "GET"
+      },   
   ];
 
   for (let route of routes) {
