@@ -81,6 +81,16 @@ module.exports = function(app) {
         type: "GET"
       },   
       {
+        url: "/kv/set",
+        controller: consulController.kv.set,
+        type: "GET"
+      },
+      {
+        url: "/kv/del",
+        controller: consulController.kv.del,
+        type: "GET"
+      },
+      {
         url: "/kv/keys",
         controller: consulController.kv.keys,
         type: "GET"
